@@ -1,0 +1,13 @@
+
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
+
+/*# sourceMappingURL=main.css.map*/

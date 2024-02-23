@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/style.css"],"names":[],"mappings":";AACA;;EAEE,SAAS;EACT,UAAU;AACZ;;AAEA;EACE,UAAU;AACZ","file":"main.css","sourcesContent":["\n*\n{\n  margin: 0;\n  padding: 0;\n}\n\nbody::-webkit-scrollbar {\n  width: 0px;\n}\n"],"sourceRoot":""}
