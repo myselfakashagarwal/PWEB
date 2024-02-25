@@ -8,3 +8,19 @@
 body::-webkit-scrollbar {
   width: 0px;
 }
+
+.webgl {
+  position: absolute;
+  top: 0;
+}
+
+#homeTitle {
+  position: relative;
+  font-size: 200px;
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 25%;
+  color:rgb(221, 242, 221);
+  user-select: none;
+  text-shadow: 1px 1px 1px black;
+}
