@@ -20,37 +20,26 @@ const scene = new THREE.Scene();
 
 // Base camera
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.001, 1000000);
-camera.position.set(0, 0.1, -0.1);
-camera.rotation.set(0,0, 0);
+camera.position.set(0, 0, 1000);
+camera.rotation.set(0.1,0.1, 0.1);
 camera.scale.set(0.1, 0.1, 0.1);
 scene.add(camera);
 
 // Controls
 const controls = new OrbitControls(camera, canvas);
 controls.enableDamping = true;
-controls.enablePan = false;
+controls.enablePan = true;
 controls.enableZoom = true;
-controls.maxPolarAngle = Math.PI / 2;
-controls.minPolarAngle = Math.PI / 2;
 // Load 3D model
 const gltf_loader = new GLTFLoader();
 let model;
 gltf_loader.load('./model/scene.gltf', (gltf) => {
     model = gltf.scene;
 
-    model = gltf.scene;
-    model.scale.set(570, 570, 570);
-
-    // Calculate offset to move the center of the model
-    const modelSize = new THREE.Vector3();
-    new THREE.Box3().setFromObject(model).getSize(modelSize);
-    const centerOffset = new THREE.Vector3(+300, -1300, -10).sub(modelSize.clone().multiplyScalar(0.5));
-
-    model.position.copy(centerOffset);
-    console.log(model.position.x, model.position.y, model.position.z);
-
+    // Set the scale of the model
+    model.position.set(0,-300,0)
+    model.scale.set(2, 2,2);
     scene.add(model);
-
 });
 
 // Ambient light
@@ -61,6 +50,9 @@ scene.add(light);
 const environmentGeometry = new THREE.BoxBufferGeometry(14, 14, 14, 2, 2, 2);
 const environmentMaterial = new THREE.MeshBasicMaterial({ side: THREE.BackSide, wireframe: true, color: 'white' });
 const environmentCube = new THREE.Mesh(environmentGeometry, environmentMaterial);
+
+const background = new THREE.Mesh(new THREE.SphereBufferGeometry(5000, 600, 400), new THREE.MeshBasicMaterial({side: THREE.BackSide,color:'rgb(0,0,0)' }));
+scene.add(background);
 
 // Renderer
 const renderer = new THREE.WebGLRenderer({ canvas: canvas });

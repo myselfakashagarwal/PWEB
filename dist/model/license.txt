@@ -1,11 +1,11 @@
 Model Information:
-* title:	Stylized planet
-* source:	https://sketchfab.com/3d-models/stylized-planet-789725db86f547fc9163b00f302c3e70
-* author:	cmzw (https://sketchfab.com/cmzw)
+* title:	Daisy
+* source:	https://sketchfab.com/3d-models/daisy-0e67b47e44f64d5bbcfc174329cb2217
+* author:	Thomas Flynn (https://sketchfab.com/nebulousflynn)
 
 Model License:
-* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
-* requirements:	Author must be credited. Commercial use is allowed.
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
 
 If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
-This work is based on "Stylized planet" (https://sketchfab.com/3d-models/stylized-planet-789725db86f547fc9163b00f302c3e70) by cmzw (https://sketchfab.com/cmzw) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+This work is based on "Daisy" (https://sketchfab.com/3d-models/daisy-0e67b47e44f64d5bbcfc174329cb2217) by Thomas Flynn (https://sketchfab.com/nebulousflynn) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

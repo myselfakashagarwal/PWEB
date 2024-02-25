@@ -1,11 +1,11 @@
 Model Information:
-* title:	Peony point cloud
-* source:	https://sketchfab.com/3d-models/peony-point-cloud-abb162b6d1df49ec9cfa85ad4ca775e6
-* author:	Terrie Simmons-Ehrhardt (https://sketchfab.com/terrielsimmons)
+* title:	Daisy
+* source:	https://sketchfab.com/3d-models/daisy-0e67b47e44f64d5bbcfc174329cb2217
+* author:	Thomas Flynn (https://sketchfab.com/nebulousflynn)
 
 Model License:
-* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
-* requirements:	Author must be credited. Commercial use is allowed.
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
 
 If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
-This work is based on "Peony point cloud" (https://sketchfab.com/3d-models/peony-point-cloud-abb162b6d1df49ec9cfa85ad4ca775e6) by Terrie Simmons-Ehrhardt (https://sketchfab.com/terrielsimmons) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+This work is based on "Daisy" (https://sketchfab.com/3d-models/daisy-0e67b47e44f64d5bbcfc174329cb2217) by Thomas Flynn (https://sketchfab.com/nebulousflynn) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
