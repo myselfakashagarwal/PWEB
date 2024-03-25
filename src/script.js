@@ -4,7 +4,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 
 // Constants
-const sizes = { width: window.innerWidth, height: window.innerHeight }
+const sizes = { width: window.innerWidth -40, height: window.innerHeight -40 }
 var device;
 if (window.device.mobile()) { device = "mobile"; }
 else if (window.device.desktop()) { device = "desktop"; }
@@ -12,8 +12,8 @@ else { device = "tablet"; }
 
 // Canvas
 const canvas = document.querySelector('canvas.webgl');
-canvas.style.maxWidth = window.innerWidth + 'px';
-canvas.style.maxHeight = window.innerHeight + 'px';
+canvas.style.maxWidth = window.innerWidth -40 + 'px';
+canvas.style.maxHeight = window.innerHeight -40 + 'px';
 
 // Scene
 const scene = new THREE.Scene();
@@ -28,8 +28,12 @@ scene.add(camera);
 // Controls
 const controls = new OrbitControls(camera, canvas);
 controls.enableDamping = true;
-controls.enablePan = true;
-controls.enableZoom = true;
+controls.enablePan = false;
+controls.enableZoom = false;
+controls.enableRotate = true;
+controls.maxPolarAngle = Math.PI / 2;
+controls.minPolarAngle = Math.PI / 3;
+controls.maxDistance = 1000;
 // Load 3D model
 const gltf_loader = new GLTFLoader();
 let model;
