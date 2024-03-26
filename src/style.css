@@ -14,11 +14,17 @@ body::-webkit-scrollbar {
 
 body {
   background-color: black;
+  width: 100vw; 
+  height: 100vh; 
+  overflow-x: hidden; 
 }
 
 .webgl {
   position: absolute;
-  top: 0;
+  align-items: center;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
   overflow-x: hidden;
 }
 
@@ -32,7 +38,7 @@ a {
   position: relative;
   font-size: 200px;
   text-align: center;
-  margin-top: 25%;
+  margin-top: 70%;
   color:rgb(195, 238, 195);
   user-select: none;
   text-shadow: 1px 1px 1px black;
@@ -45,9 +51,9 @@ a {
 }
 
 #greetHeading {
-  color:rgb(235, 232, 185);
+  color:rgb(198, 236, 234);
   position: relative;
-  margin-top: 35%;
+  margin-top: 170%;
   font-size: 80px;
   text-align: center;
   font-family:'galada';
@@ -75,6 +81,7 @@ a {
   font-size: 120px;
   font-family:'Homemade apple';
   text-align: left;
+  margin-left: 60px;
 }
 
 
@@ -86,42 +93,41 @@ a {
 
 .majorParagraph {
   font-family:monospace;
-  color:rgb(221, 242, 221);
+  color:rgb(221, 241, 221);
   font-size: 50px;
-  margin:30px;
+  margin:10px;
+  padding: 10px;
+  background-color: rgb(12, 12, 12);
 }
 
 .minorParagraph {
   font-family:monospace;
-  color:rgb(36, 203, 36);
+  color:rgb(207, 226, 143);
   font-size: 50px;
   margin: 30px;
 
 }
 
 .list {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 30px;
   display: flex;
-  justify-content:start;
+  flex-wrap: wrap;
+  justify-content:center;
   align-items: center;
+}
+
+.listItem {
+  margin: 20px;
 }
 
 .listItemLinks {
   font-size: 70px;
   font-family:monospace;
-  color: white;
-  margin: 30px;
+  color: rgb(26, 218, 236);
   padding: 30px;
-  color: rgb(255, 255, 255);
 }
 
-#projectsDiv {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-left: 40px;
 
-}
 
 #projectsParagraph{
   margin-bottom: 100px;
@@ -135,8 +141,7 @@ a {
 
 .project {
   border: 1px dotted white;
-  padding: 40px;
-  margin: 30px;
+  padding: 15px;
 }
 
 .projectHeading {
@@ -146,7 +151,7 @@ a {
 }
 
 #theLine {
-  height: 3px;
+  height: 6px;
   margin-top: 150px;
 }
 
@@ -168,8 +173,8 @@ a {
 .time {
   padding: 20px;
   text-align: left;
-  font-family: sans-serif;
-  color: rgb(84, 217, 202);
+  font-family:monospace;
+  color: rgb(208, 240, 236);
 }
 
 #quote
@@ -182,3 +187,19 @@ a {
   text-align: center;
 }
 
+#skillsList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skillsListItem {
+  padding: 20px;
+  margin: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  background-color: rgb(27, 27, 26);
+  font-family: monospace;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 10px;
+}

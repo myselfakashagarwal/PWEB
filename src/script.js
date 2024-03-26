@@ -3,17 +3,32 @@ import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 
-// Constants
-const sizes = { width: window.innerWidth -40, height: window.innerHeight -40 }
-var device;
-if (window.device.mobile()) { device = "mobile"; }
-else if (window.device.desktop()) { device = "desktop"; }
-else { device = "tablet"; }
-
 // Canvas
 const canvas = document.querySelector('canvas.webgl');
-canvas.style.maxWidth = window.innerWidth -40 + 'px';
-canvas.style.maxHeight = window.innerHeight -40 + 'px';
+
+
+// Constants
+
+const sizes = { width: window.innerWidth * 0.5, height: window.innerHeight * 0.52}
+var device;
+if (window.device.mobile()) {
+    device = "mobile"; 
+    const greetHeading = document.getElementById("greetHeading");
+    greetHeading.style.marginTop = "120%"
+    canvas.style.border= "1px solid rgb(8,8,8)"
+    canvas.style.borderRadius = "10px"
+} else if (window.device.desktop()) {
+    device = "desktop";
+    sizes.width = window.innerWidth - 80 ;
+    sizes.height = window.innerHeight -80 ; 
+    const homeTitle = document.getElementById("homeTitle");
+    homeTitle.style.marginTop = "20%"
+    const greetHeading = document.getElementById("greetHeading");
+    greetHeading.style.marginTop = "25%"
+} else {
+    device = "tablet"; 
+}
+
 
 // Scene
 const scene = new THREE.Scene();
@@ -46,8 +61,31 @@ gltf_loader.load('./model/scene.gltf', (gltf) => {
     scene.add(model);
 });
 
+// Disable controls on scroll
+let isScrolling = false;
+
+window.addEventListener('scroll', () => {
+    isScrolling = true;
+    controls.enabled = false;
+
+    setTimeout(() => {
+        isScrolling = false;
+    }, 100);
+});
+
+// Enable controls when not scrolling
+const checkScroll = () => {
+    if (!isScrolling) {
+        controls.enabled = true;
+    }
+    requestAnimationFrame(checkScroll);
+};
+
+checkScroll();
+
+
 // Ambient light
-const light = new THREE.AmbientLight('white', 1);
+const light = new THREE.AmbientLight('white', 3);
 scene.add(light);
 
 // Environment cube
@@ -82,3 +120,88 @@ const tick = () => {
 
 // Start the animation
 tick();
+
+
+const resize = () => {
+    sizes.width = window.innerWidth -80;
+    sizes.height = window.innerHeight -80;
+
+    // Update camera
+    camera.aspect = sizes.width / sizes.height;
+    camera.updateProjectionMatrix();
+
+    // Update renderer
+    renderer.setSize(sizes.width, sizes.height);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+};
+// elements 
+
+const majorHeading = document.querySelectorAll(".majorHeading");
+if(device == "mobile") {
+    majorHeading.forEach(element => {
+        element.style.fontSize = "4rem";
+        element.style.textAlign = "center"; 
+        element.style.marginLeft = "0px";
+    });
+} else {
+
+}
+
+const majorPragraph = document.querySelectorAll(".majorParagraph");
+if(device != "desktop") {
+    majorPragraph.forEach(element => {
+        element.style.fontSize = "1.5rem";
+    });
+}
+
+const skill = document.querySelectorAll(".skill");
+if(device != "desktop") {
+    skill.forEach(element => {
+        element.style.fontSize = "1.5rem";
+    });
+}
+
+const listItemLinks = document.querySelectorAll(".listItemLinks");
+if(device != "desktop") {
+    listItemLinks.forEach(element => {
+        element.style.fontSize = "2rem";
+    });
+}
+
+const timeHeading = document.querySelectorAll(".timeHeading");
+if(device != "desktop") {
+    timeHeading.forEach(element => {
+        element.style.fontSize = "1.5rem";
+    });
+}
+
+const greetHeading = document.getElementById("greetHeading");
+if(device != "desktop") {
+    greetHeading.style.fontSize = "2rem";
+}
+
+const quote = document.getElementById("quote");
+const author = document.getElementById("author");
+if(device != "desktop") {
+    quote.style.fontSize = "1.5rem";
+    author.style.fontSize = "1rem";
+}
+
+const majorDiv = document.querySelectorAll(".majorDiv");
+if(device == "mobile") {
+    majorDiv.forEach(element => {
+        element.style.marginTop = "3rem";
+    });
+}
+
+const projectHeading = document.querySelectorAll(".projectHeading");
+if(device != "desktop") {
+    projectHeading.forEach(element => {
+        element.style.fontSize = "2rem";
+    });
+}
+
+const contactList = document.getElementById("contactList");
+if(device == "desktop") {
+    contactList.style.marginBottom = "5rem";
+}
