@@ -9,7 +9,7 @@ const canvas = document.querySelector('canvas.webgl');
 
 // Constants
 
-const sizes = { width: window.innerWidth * 0.5, height: window.innerHeight * 0.52}
+const sizes = { width: window.innerWidth * 0.8, height: window.innerHeight * 0.9}
 var device;
 if (window.device.mobile()) {
     device = "mobile"; 
@@ -157,7 +157,16 @@ if(device != "desktop") {
 const skill = document.querySelectorAll(".skill");
 if(device != "desktop") {
     skill.forEach(element => {
-        element.style.fontSize = "1.5rem";
+        element.style.fontSize = "1rem";
+        element.style.margin = "0px"
+        element.style.padding = "0px"
+    });
+}
+
+const skillsListItem = document.querySelectorAll(".skillsListItem");
+if(device != "desktop") {
+    skillsListItem.forEach(element => {
+        element.style.margin = "10px";
     });
 }
 
