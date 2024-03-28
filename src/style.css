@@ -82,6 +82,22 @@ a {
   font-family:'Homemade apple';
   text-align: left;
   margin-left: 60px;
+  text-shadow: 0 0 5px rgb(162, 223, 125, 0.2), 0 0 10px rgb(162, 223, 125, 0.2), 0 0 15px rgb(162, 223, 125, 0.2), 0 0 20px rgb(162, 223, 125);
+  animation: flicker 1.5s infinite alternate;
+}
+.quote {
+  animation-delay: 1s;
+}
+
+@keyframes flicker {
+    0%, 20%, 24%, 32%, 50%, 56%, 64%, 100%{
+      text-shadow: 0 0 5px rgb(162, 223, 125, 0.2), 0 0 10px rgb(162, 223, 125, 0.2), 0 0 15px rgb(162, 223, 125, 0.2), 0 0 20px rgb(162, 223, 125);
+      color:rgb(162, 223, 125);
+    }
+    28%, 60% {
+      color: transparent;
+      text-shadow: none;
+    }
 }
 
 
@@ -201,8 +217,7 @@ a {
   font-size: 25px;
   background-color: rgb(27, 27, 26);
   font-family: monospace;
-  border: 3px solid rgb(0, 0, 0);
-  border-radius: 10px;
+  border: 1px solid rgb(162, 223, 125);;
 }
 
 .skill {
@@ -225,10 +240,9 @@ a {
 .project {
   color: rgb(255, 255, 255);
   background-color: black;
-  border: 2px dotted white;
+  border: 2px dotted rgb(162, 223, 125);;
   padding: 15px;
   margin-top: 50px;
-  border-radius: 10px;
 }
 
 .projectListItem {
@@ -245,4 +259,9 @@ a {
 .project:hover {  
   background-color:rgb(162, 223, 125);
   color: black;
+}
+.footer {
+  margin: 5vh 0;
+  padding: 5vh;
+  border-top: 2px dotted rgb(162, 223, 125);
 }
