@@ -1,0 +1,29 @@
+services:
+  pweb-dev:
+    image: "ghcr.io/myselfakashagarwal/pweb:env"
+    container_name: "pweb-dev"
+    working_dir: "/app"
+    ports:
+      - "1111:8080"
+    volumes:
+      - "$PWD:/app"
+    entrypoint: "npm run dev"
+    profiles:
+      - "development"
+      - "pweb"
+    restart: "always"
+
+  pweb-build:
+    image: "ghcr.io/myselfakashagarwal/pweb:build"
+    container_name: "pweb-build"
+    user: "root"
+    ports:
+      - "2222:8080"
+    volumes:
+      - "$PWD:/app"
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    profiles:
+      - "build"
+      - "pweb"
+    tty: "true"
+    restart: "always"

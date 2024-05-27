@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, height=device-height, target-densitydpi=high-dpi, initial-scale=1.0">
     <title>Peace & Chaos </title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div class="majorDiv" id="homeDiv">
@@ -12,29 +13,29 @@
     </div>
 
     <div id="greetDiv" class="majorDiv">
-        <h1 class="majorHeading" id="greetHeading">
+        <h1 class="majorHeading quote" id="greetHeading" data-aos="fade-up" data-anchor-placement="center">
             " Life is an equilibrium of equall and opposite counter parts.
             <br>
             One cannot exist without other yet they exist equally in combined form. " </h1>
     </div>
 
     <div class="majorDiv" id="aboutDiv">
-        <h1 class="majorHeading" id="aboutHeading">Me</h1>
-        <p class="majorParagraph" id="aboutParagraph">
+        <h1 class="majorHeading" id="aboutHeading" data-aos="flip-up">Me</h1>
+        <p class="majorParagraph" id="aboutParagraph" data-aos="slide-up" data-anchor-placement="center"> 
             Akash, a ¿ who loves to solve the problems unknown not with the ones with predefined answers, a techie who loves to dive into depths experimenting with random stuff and creating something new and interesting just RANDOM. Coding with humor and sarcasm enjoying the chaos and peace of life.
             <br> <br>
             "Who are you" ask others well I've been asking the same question maybe I am a NPC or a reflection of the eternal and infinity.....
         </p>
     </div>
     <div class="majorDiv" id="aboutMore">
-        <h1 class="majorHeading" id="aboutMoreHeading">Timeline</h1>
+        <h1 class="majorHeading" id="aboutMoreHeading" data-aos="flip-down">Timeline</h1>
         <ul class="list" id="timelineList">
             <li class="timelineListItem" >
-                <div class="time">
+                <div class="time" data-aos="slide-up" data-aos-delay="200">
                     <h1 class="timeHeading">→  Devops Intern @ MilkBasket   4/2024 - Current</h1>
                 </div>
             </li>
-            <li class="timelineListItem">
+            <li class="timelineListItem" data-aos="slide-up" data-aos-delay="400">
                 <div class="time">
                     <h1 class="timeHeading">→ Student @ Chandigarh University 2022 - 2025 (Bachelor in Computer Applications) </h1>
                 </div>
@@ -43,40 +44,16 @@
     </div>
 
     <div class="majorDiv" id="skillsDiv">
-        <h1 class="majorHeading" id="skillsHeading">Skills</h1>
-        <p class="majorParagraph" id="skillsParagraph" id="highlight">
+        <h1 class="majorHeading" id="skillsHeading" data-aos="flip-down">Skills</h1>
+        <p class="majorParagraph" id="skillsParagraph" id="highlight" data-aos="slide-up">
            I love to code I don't know why maybe cause love is unconditional... who knows maybe I am a robot or a human or a robot with human emotions or a human with robotic emotions. OR OR OR OR ... ( logical error !! ).
         <br><br>
             Throught my journey I came across multiple problems which provided me the opportunity to grow and expand my skillset resulting in a versatile toolbox.
         </p>
         <p class="minorParagraph" id="toolsAndTechnologiesParagraph">
             <ul class="list" id="skillsList">
-                <li class="skillsListItem">
-                    <h1 class="skill">SysAdm</h1>
-                </li>
-                <li class="skillsListItem">
-                    <h1 class="skill">Automation</h1>
-                </li>
-                <li class="skillsListItem">
-                    <h1 class="skill">Containerisation</h1>
-                </li>
-                <li class="skillsListItem">
-                    <h1 class="skill">Monitoring</h1>
-                </li>
-                <li class="skillsListItem">
-                    <h1 class="skill">Cloud</h1>
-                </li>
-                <li class="skillsListItem">
-                    <h1 class="skill">Web</h1>
-                </li>
-                <li class="skillsListItem">
-                    <h1 class="skill">DBMS</h1>
-                </li>
-                <li class="skillsListItem">
-                    <h1 class="skill">Networking</h1>
-                </li>
-                <li class="skillsListItem">
-                    <h1 class="skill">Programming</h1>
+                <li class="skillsListItem" data-aos="flip-up" data-aos-anchor-placement="bottom bottom">
+                    <h1 class="skill">CODE</h1>
                 </li>
             </ul>
         </p>
@@ -91,60 +68,68 @@
         </p>
         <h1 id="quote">&nbsp;" An idiot admires complexity,&nbsp; <br> &nbsp; a genius admires simplicity. " &nbsp; <br> <h1 style="font-family: cursive;font-size: 40px;color: gold;text-align: right;margin-right: 35%;margin-top: -50px;" id="author">- Terry A. Davis</h1> </h1> <br><br><br><br>
         <ul class="list" id="projectsList" class="inlineList">
-            <li class="listItem" class="projectListItem">
+            <a href="https://github.com/myselfakashagarwal/monc" class="projectsLink" target="_blank">
+                <li class="listItem" class="projectListItem" data-aos="flip-up">
                 <div class="project">
                     <h1 class="projectHeading"> MONC </h1>
                     <p class="projectsDescription">A three tier containerised observibiity stack build for scrapping storing and visualizing logs and metrics </p>
-                    <a href="https://github.com/myselfakashagarwal/monc" class="projectsLink">more</a>
                 </div>
             </li>
-            <li class="listItem" class="projectListItem">
+            </a>
+            <a href="https://github.com/myselfakashagarwal/nvimc" class="projectsLink" target="_blank">
+            <li class="listItem" class="projectListItem" data-aos="flip-up">
                 <div class="project">
                     <h1 class="projectHeading"> NVIMC </h1>
                     <p class="projectsDescription">A utility to run isolated containerised dev environments</p>
-                    <a href="https://github.com/myselfakashagarwal/nvimc" class="projectsLink">more</a>
                 </div>
             </li>
-            <li class="listItem" class="projectListItem">
-                <div class="project">
+            </a>
+            <a href="https://github.com/myselfakashagarwal/gits" class="projectsLink" target="_blank">
+            <li class="listItem" class="projectListItem" data-aos="flip-up">
+                <div class="project">                    
                     <h1 class="projectHeading"> GITS </h1>
                     <p class="projectsDescription">Set of shell scripts to setup Git Server on bare metal, includes hosting web interface for repositories and system administration</p>
-                    <a href="https://github.com/myselfakashagarwal/gits" class="projectsLink">more</a>
                 </div>
             </li>
-            <li class="listItem" class="projectListItem">
+            </a>
+            <a href="https://github.com/myselfakashagarwal/vivekraj.codes.production" class="projectsLink" target="_blank">
+            <li class="listItem" class="projectListItem" data-aos="flip-up">
                 <div class="project">
                     <h1 class="projectHeading"> VWEB </h1>
                     <p class="projectsDescription">Personal portfoliio website having two environments dev and prod</p>
-                    <a href="https://github.com/myselfakashagarwal/vivekraj.codes.production" class="projectsLink">more</a>
                 </div>
             </li>
-            <li class="listItem" class="projectListItem">
+            </a>
+            <a href="https://github.com/myselfakashagarwal/pweb" class="projectsLink" target="_blank">
+            <li class="listItem" class="projectListItem" data-aos="flip-up">
                 <div class="project">
                     <h1 class="projectHeading"> PWEB </h1>
                     <p class="projectsDescription">Personal portfolio WebGL website build usind THREE.js depicting a simplified dev resume.</p>
-                    <a href="https://github.com/myselfakashagarwal/pweb" class="projectsLink">more</a>
                 </div>
             </li>
+            </a>
         </ul>   
     </div>
 
-        <hr id="theLine" color="yellow">
 
-    <div class="majorDiv" id="contactDiv">
+    <div class="majorDiv footer" id="contactDiv">
         <h1 class="majorHeading" id="contactHeading"> Connect </h1>
         <ul class="list" id="contactList">
-            <li class="listItem">
+            <li class="listItem" data-aos="slide-down" data-aos-anchor-placement="bottom">
                 <a href="mailto:myselfakashagarwal" class="listItemLinks">Gmail</a>
             </li>
-            <li class="listItem">
+            <li class="listItem" data-aos="slide-down" data-aos-anchor-placement="bottom" data-aos-delay="100">
                 <a  href="https://github.com/myselfakashagarwal" class="listItemLinks">Github</a>
             </li>
-            <li class="listItem">
+            <li class="listItem" data-aos="slide-down" data-aos-anchor-placement="bottom" data-aos-delay="300">
                 <a  href="https://www.linkedin.com/in/myselfakashagarwal/" class="listItemLinks">Linkedin</a>
             </li>
         </ul>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://unpkg.com/current-device/umd/current-device.min.js"></script>
 </body>
 </html>
