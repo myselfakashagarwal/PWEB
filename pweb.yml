@@ -21,6 +21,8 @@ services:
       - "2222:8080"
     volumes:
       - "$PWD:/app"
+      - "$PWD/jobs/pweb_push/:/var/jenkins_home/jobs/pweb_push"
+      - "$PWD/jobs/pweb_build/:/var/jenkins_home/jobs/pweb_build"
       - "/var/run/docker.sock:/var/run/docker.sock"
     profiles:
       - "build"
