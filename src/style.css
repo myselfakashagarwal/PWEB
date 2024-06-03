@@ -10,6 +10,7 @@
 
 body::-webkit-scrollbar {
   width: 0px;
+  user-select: none;
 }
 
 body {
@@ -26,6 +27,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   overflow-x: hidden;
+  border-radius: 10px;
 }
 
 a {
@@ -38,7 +40,7 @@ a {
   position: relative;
   font-size: 100px;
   text-align: center;
-  margin-top: 70%;
+  margin-top: 50%;
   color:rgb(195, 238, 195);
   user-select: none;
   text-shadow: 1px 1px 1px black;
@@ -54,17 +56,11 @@ a {
 #greetHeading {
   color:rgb(198, 236, 234);
   position: relative;
-  margin-top: 100%;
   font-size: 35px;
   text-align: center;
   font-family:'galada';
 }
 
-#greetSubHeading {
-  text-align: center;
-  font-size: 10px;
-  font-family: sans-serif;
-}
 
 
 .majorDiv {

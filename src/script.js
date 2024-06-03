@@ -17,9 +17,13 @@ var device;
 if (window.device.mobile()) {
     device = "mobile"; 
     const greetHeading = document.getElementById("greetHeading");
-    greetHeading.style.marginTop = "120%"
-    canvas.style.border= "1px solid rgb(8,8,8)"
+    greetHeading.style.marginTop = "30%"
     canvas.style.borderRadius = "10px"
+    canvas.style.zIndex = "-1"
+    const homeDiv = document.getElementById("homeDiv");
+    const homeTitle = document.getElementById("homeTitle");
+    homeTitle.style.marginTop = "150%"
+    homeDiv.style.marginBottom = "0%"
 } else if (window.device.desktop()) {
     device = "desktop";
     sizes.width = window.innerWidth - 80 ;
@@ -50,8 +54,10 @@ controls.enablePan = false;
 controls.enableZoom = false;
 controls.enableRotate = true;
 controls.maxPolarAngle = Math.PI / 2;
-controls.minPolarAngle = Math.PI / 3;
+//controls.minPolarAngle = Math.PI / 2;
+//controls.maxAzimuthAngle = Math.PI / 2;
 controls.maxDistance = 1000;
+
 // Load 3D model
 const gltf_loader = new GLTFLoader();
 let model;
@@ -64,27 +70,6 @@ gltf_loader.load('./model/scene.gltf', (gltf) => {
     scene.add(model);
 });
 
-// Disable controls on scroll
-let isScrolling = false;
-
-window.addEventListener('scroll', () => {
-    isScrolling = true;
-    controls.enabled = false;
-
-    setTimeout(() => {
-        isScrolling = false;
-    }, 100);
-});
-
-// Enable controls when not scrolling
-const checkScroll = () => {
-    if (!isScrolling) {
-        controls.enabled = true;
-    }
-    requestAnimationFrame(checkScroll);
-};
-
-checkScroll();
 
 
 // Ambient light
