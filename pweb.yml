@@ -29,3 +29,24 @@ services:
       - "pweb"
     tty: "true"
     restart: "always"
+
+  pweb-deploy:
+    image: "ghcr.io/myselfakashagarwal/pweb:latest"
+    container_name: "pweb-deploy"
+    ports:
+      - "80:8082"
+    profiles:
+      - "pweb"
+      - "deploy"
+    restart: "always"
+
+  pweb-update:
+    image: "containrrr/watchtower:arm64v8-1.7.1"
+    container_name: "pweb-update"
+    profiles:
+      - "pweb"
+      - "update"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    command: "--interval 10 pweb-deploy"
+
