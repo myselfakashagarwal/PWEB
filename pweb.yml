@@ -45,8 +45,10 @@ services:
     container_name: "pweb-update"
     profiles:
       - "pweb"
+      - "deploy"
       - "update"
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"
     command: "--interval 10 pweb-deploy"
+    restart: "always"
 

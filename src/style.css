@@ -46,6 +46,7 @@ a {
 
 
 #greetDiv {
+  margin-top:20% ;
   background-color: black;
   margin-bottom: 10%;
 }
@@ -53,8 +54,8 @@ a {
 #greetHeading {
   color:rgb(198, 236, 234);
   position: relative;
-  margin-top: 170%;
-  font-size: 50px;
+  margin-top: 100%;
+  font-size: 35px;
   text-align: center;
   font-family:'galada';
 }
@@ -67,9 +68,9 @@ a {
 
 
 .majorDiv {
-  margin:20px;
-  padding: 20px;
-  margin-top: 200px;
+  margin:10px;
+  padding: 10px;
+  margin-top: 60px;
 }
 
 .minorDiv {
@@ -78,27 +79,12 @@ a {
 
 .majorHeading {
   color:rgb(162, 223, 125);
-  font-size: 60px;
+  font-size: 50px;
   font-family:'Homemade apple';
   text-align: left;
   margin-left: 60px;
-  text-shadow: 0 0 5px rgb(162, 223, 125, 0.2), 0 0 10px rgb(162, 223, 125, 0.2), 0 0 15px rgb(162, 223, 125, 0.2), 0 0 20px rgb(162, 223, 125);
-  animation: flicker 1.5s infinite alternate;
-}
-.quote {
-  animation-delay: 1s;
 }
 
-@keyframes flicker {
-    0%, 20%, 24%, 32%, 50%, 56%, 64%, 100%{
-      text-shadow: 0 0 5px rgb(162, 223, 125, 0.2), 0 0 10px rgb(162, 223, 125, 0.2), 0 0 15px rgb(162, 223, 125, 0.2), 0 0 20px rgb(162, 223, 125);
-      color:rgb(162, 223, 125);
-    }
-    28%, 60% {
-      color: transparent;
-      text-shadow: none;
-    }
-}
 
 
 .minorHeading {
@@ -109,18 +95,17 @@ a {
 
 .majorParagraph {
   font-family:monospace;
-  color:rgb(221, 241, 221);
-  font-size: 30px;
-  margin:10px;
-  padding: 10px;
-  background-color: rgb(12, 12, 12);
+  color:white;
+  font-size: 20px;
+  margin:5px;
+  padding:10px;
 }
 
 .minorParagraph {
   font-family:monospace;
   color:rgb(207, 226, 143);
-  font-size: 50px;
-  margin: 30px;
+  font-size: 30px;
+  margin: 10px;
 
 }
 
@@ -140,13 +125,13 @@ a {
   font-size: 40px;
   font-family:monospace;
   color: rgb(26, 218, 236);
-  padding: 30px;
+  padding: 20px;
 }
 
 
 
 #projectsParagraph{
-  margin-bottom: 100px;
+  margin-bottom: 10px;
 }
 
 #projectsList {
@@ -158,8 +143,9 @@ a {
 
 
 .projectHeading {
+  color: palegreen;
   font-family:monospace;
-  font-size: 35px;
+  font-size: 25px;
   font-weight: lighter;
 }
 
@@ -177,14 +163,14 @@ a {
 #timelineList {
   display: inline;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   color: rgb(49, 94, 134);
   list-style: none;
   margin-left: 30px;
 }
 
 .timeHeading {
-  font-size: 30px;
+  font-size: 23px;
 }
 
 .time {
@@ -194,15 +180,6 @@ a {
   color: rgb(208, 240, 236);
 }
 
-#quote
-{
-  font-family: 'Zilla Slab Highlight', sans-serif;
-  font-size: 30px;
-  color: rgb(255, 255, 255);
-  margin-top: 100px;
-  margin-bottom: 100px;
-  text-align: center;
-}
 
 #skillsList {
   list-style: none;
@@ -212,12 +189,11 @@ a {
 
 .skillsListItem {
   padding: 20px;
-  margin: 20px;
+  margin: 10px;
   color: rgb(255, 255, 255);
-  font-size: 25px;
-  background-color: rgb(27, 27, 26);
+  font-size: 20px;
+  background-color:black;
   font-family: monospace;
-  border: 1px solid rgb(162, 223, 125);;
 }
 
 .skill {
@@ -231,23 +207,20 @@ a {
 
 .projectsDescription {
   font-family:monospace;
-  font-size: 20px;
-  padding: 10px;
+  font-size: 18px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .project {
-  color: rgb(255, 255, 255);
-  background-color: black;
-  border: 2px dotted rgb(162, 223, 125);;
   padding: 15px;
+  color: white;
   margin-top: 50px;
+  border-radius: 17px;
+  border: 1px solid white;
 }
 
 .projectListItem {
-  margin: 10px;
-  padding: 10px;
 } 
 
 .projectsLink {
@@ -256,12 +229,9 @@ a {
   font-size: 20px;
 }
 
-.project:hover {  
-  background-color:rgb(162, 223, 125);
-  color: black;
-}
 .footer {
   margin: 5vh 0;
   padding: 5vh;
   border-top: 2px dotted rgb(162, 223, 125);
 }
+

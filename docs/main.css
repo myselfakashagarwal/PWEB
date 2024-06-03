@@ -1,0 +1,240 @@
+@import url(https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Homemade+Apple&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Lobster&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Galada&display=swap);
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
+body {
+  background-color: black;
+  width: 100vw; 
+  height: 100vh; 
+  overflow-x: hidden; 
+}
+
+.webgl {
+  position: absolute;
+  align-items: center;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow-x: hidden;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+
+}
+#homeTitle {
+  font-family:sans-serif;
+  position: relative;
+  font-size: 100px;
+  text-align: center;
+  margin-top: 70%;
+  color:rgb(195, 238, 195);
+  user-select: none;
+  text-shadow: 1px 1px 1px black;
+}
+
+
+#greetDiv {
+  margin-top:20% ;
+  background-color: black;
+  margin-bottom: 10%;
+}
+
+#greetHeading {
+  color:rgb(198, 236, 234);
+  position: relative;
+  margin-top: 100%;
+  font-size: 35px;
+  text-align: center;
+  font-family:'galada';
+}
+
+#greetSubHeading {
+  text-align: center;
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+
+.majorDiv {
+  margin:10px;
+  padding: 10px;
+  margin-top: 60px;
+}
+
+.minorDiv {
+
+}
+
+.majorHeading {
+  color:rgb(162, 223, 125);
+  font-size: 50px;
+  font-family:'Homemade apple';
+  text-align: left;
+  margin-left: 60px;
+}
+
+
+
+.minorHeading {
+  color:khaki;
+  font-family:'Lobster', sans-serif;
+  font-size: 30px;
+}
+
+.majorParagraph {
+  font-family:monospace;
+  color:white;
+  font-size: 20px;
+  margin:5px;
+  padding:10px;
+}
+
+.minorParagraph {
+  font-family:monospace;
+  color:rgb(207, 226, 143);
+  font-size: 30px;
+  margin: 10px;
+
+}
+
+.list {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+}
+
+.listItem {
+  margin: 20px;
+}
+
+.listItemLinks {
+  font-size: 40px;
+  font-family:monospace;
+  color: rgb(26, 218, 236);
+  padding: 20px;
+}
+
+
+
+#projectsParagraph{
+  margin-bottom: 10px;
+}
+
+#projectsList {
+  color: white;
+  list-style: none;
+  display: inline;
+}
+
+
+
+.projectHeading {
+  color: palegreen;
+  font-family:monospace;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+#theLine {
+  height: 6px;
+  margin-top: 150px;
+}
+
+.listItemLinks:hover {
+  background-color: rgb(249, 249, 248);
+  color: black;
+}
+
+
+#timelineList {
+  display: inline;
+  text-align: center;
+  font-size: 20px;
+  color: rgb(49, 94, 134);
+  list-style: none;
+  margin-left: 30px;
+}
+
+.timeHeading {
+  font-size: 23px;
+}
+
+.time {
+  padding: 20px;
+  text-align: left;
+  font-family:monospace;
+  color: rgb(208, 240, 236);
+}
+
+
+#skillsList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skillsListItem {
+  padding: 20px;
+  margin: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  background-color:black;
+  font-family: monospace;
+}
+
+.skill {
+  font-size: 25px;
+}
+
+#contactHeading {
+  text-align: center;
+  margin: 0px;
+}
+
+.projectsDescription {
+  font-family:monospace;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.project {
+  padding: 15px;
+  color: white;
+  margin-top: 50px;
+  border-radius: 17px;
+  border: 1px solid white;
+}
+
+.projectListItem {
+} 
+
+.projectsLink {
+  font-family:monospace;
+  color: rgb(66, 106, 207);
+  font-size: 20px;
+}
+
+.footer {
+  margin: 5vh 0;
+  padding: 5vh;
+  border-top: 2px dotted rgb(162, 223, 125);
+}
+
+
+
+/*# sourceMappingURL=main.css.map*/

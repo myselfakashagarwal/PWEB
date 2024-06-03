@@ -142,7 +142,7 @@ const resize = () => {
 const majorHeading = document.querySelectorAll(".majorHeading");
 if(device == "mobile") {
     majorHeading.forEach(element => {
-        element.style.fontSize = "4rem";
+        element.style.fontSize = "3.5rem";
         element.style.textAlign = "center"; 
         element.style.marginLeft = "0px";
     });
@@ -153,7 +153,7 @@ if(device == "mobile") {
 const majorPragraph = document.querySelectorAll(".majorParagraph");
 if(device != "desktop") {
     majorPragraph.forEach(element => {
-        element.style.fontSize = "1.5rem";
+        element.style.fontSize = "1.2rem";
     });
 }
 
@@ -176,28 +176,22 @@ if(device != "desktop") {
 const listItemLinks = document.querySelectorAll(".listItemLinks");
 if(device != "desktop") {
     listItemLinks.forEach(element => {
-        element.style.fontSize = "2rem";
+        element.style.fontSize = "1.7rem";
     });
 }
 
 const timeHeading = document.querySelectorAll(".timeHeading");
 if(device != "desktop") {
     timeHeading.forEach(element => {
-        element.style.fontSize = "1.5rem";
+        element.style.fontSize = "1.2rem";
     });
 }
 
 const greetHeading = document.getElementById("greetHeading");
 if(device != "desktop") {
-    greetHeading.style.fontSize = "2rem";
+    greetHeading.style.fontSize = "1.7rem";
 }
 
-const quote = document.getElementById("quote");
-const author = document.getElementById("author");
-if(device != "desktop") {
-    quote.style.fontSize = "1.5rem";
-    author.style.fontSize = "1rem";
-}
 
 const majorDiv = document.querySelectorAll(".majorDiv");
 if(device == "mobile") {
@@ -209,7 +203,7 @@ if(device == "mobile") {
 const projectHeading = document.querySelectorAll(".projectHeading");
 if(device != "desktop") {
     projectHeading.forEach(element => {
-        element.style.fontSize = "2rem";
+        element.style.fontSize = "1.6rem";
     });
 }
 
