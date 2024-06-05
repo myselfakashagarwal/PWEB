@@ -19,9 +19,14 @@ if (window.device.mobile()) {
     const greetHeading = document.getElementById("greetHeading");
     greetHeading.style.marginTop = "30%"
     canvas.style.borderRadius = "10px"
-    canvas.style.zIndex = "-1"
+    // canvas.style.marginTop = "-10%"
+    canvas.style.zIndex = "1"
     const homeDiv = document.getElementById("homeDiv");
     const homeTitle = document.getElementById("homeTitle");
+    const greetDiv = document.getElementById("greetDiv");
+    greetHeading.style.fontSize = "0.2rem"
+    sizes.height = window.innerHeight * 0.8;
+    greetDiv.style.marginTop = "20%"
     homeTitle.style.marginTop = "150%"
     homeDiv.style.marginBottom = "0%"
 } else if (window.device.desktop()) {
@@ -42,7 +47,7 @@ const scene = new THREE.Scene();
 
 // Base camera
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.001, 1000000);
-camera.position.set(0, 0, 1000);
+camera.position.set(0, 0, 0.000001);
 camera.rotation.set(0.1,0.1, 0.1);
 camera.scale.set(0.1, 0.1, 0.1);
 scene.add(camera);
@@ -53,32 +58,25 @@ controls.enableDamping = true;
 controls.enablePan = false;
 controls.enableZoom = false;
 controls.enableRotate = true;
-controls.maxPolarAngle = Math.PI / 2;
 //controls.minPolarAngle = Math.PI / 2;
 //controls.maxAzimuthAngle = Math.PI / 2;
 controls.maxDistance = 1000;
 
 // Load 3D model
-const gltf_loader = new GLTFLoader();
+const gltf_loader=new GLTFLoader()
 let model;
-gltf_loader.load('./model/scene.gltf', (gltf) => {
-    model = gltf.scene;
+gltf_loader.load('./model/scene.gltf',(gltf)=>{ model=gltf.scene;model.scale.set(4,4,4);model.position.set(0,-6,0);scene.add(model);model.rotation.y = Math.PI+0.5;})    
 
-    // Set the scale of the model
-    model.position.set(0,-300,0)
-    model.scale.set(2, 2,2);
-    scene.add(model);
-});
 
 
 
 // Ambient light
-const light = new THREE.AmbientLight('white', 3);
+const light = new THREE.AmbientLight('palegreen', 3);
 scene.add(light);
 
 // Environment cube
 const environmentGeometry = new THREE.BoxBufferGeometry(14, 14, 14, 2, 2, 2);
-const environmentMaterial = new THREE.MeshBasicMaterial({ side: THREE.BackSide, wireframe: true, color: 'white' });
+const environmentMaterial = new THREE.MeshBasicMaterial({ side: THREE.BackSide, color: 'palevioletred' });
 const environmentCube = new THREE.Mesh(environmentGeometry, environmentMaterial);
 
 const background = new THREE.Mesh(new THREE.SphereBufferGeometry(5000, 600, 400), new THREE.MeshBasicMaterial({side: THREE.BackSide,color:'rgb(0,0,0)' }));

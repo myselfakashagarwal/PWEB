@@ -1,0 +1,9 @@
+Started by user [8mha:////4Jmap8HfH3Qi0aYDrgvTrAwR6MRbQrEW3e1Yy92PRYVUAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/jobs/pweb_build/workspace
+[workspace] $ /bin/sh -xe /tmp/jenkins12706332931124998004.sh
++ cd /app
++ docker context use desktop-linux
+context "desktop-linux": context not found: open /root/.docker/contexts/meta/fe9c6bd7a66301f49ca9b6a70b217107cd1284598bfc254700c989b916da791e/meta.json: no such file or directory
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

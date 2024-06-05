@@ -41,7 +41,7 @@ services:
     restart: "always"
 
   pweb-update:
-    image: "containrrr/watchtower:arm64v8-1.7.1"
+    image: "containrrr/watchtower"
     container_name: "pweb-update"
     profiles:
       - "pweb"
