@@ -14,7 +14,7 @@ body::-webkit-scrollbar {
 }
 
 body {
-  background-color: black;
+  background-color: white;
   width: 100vw; 
   height: 100vh; 
   overflow-x: hidden; 
@@ -36,29 +36,29 @@ a {
 
 }
 #homeTitle {
+  font-weight: 1000;
   font-family:sans-serif;
   position: relative;
-  font-size: 100px;
+  font-size: 110px;
+  color:rgb(186, 240, 216);
   text-align: center;
-  margin-top: 50%;
-  color:rgb(195, 238, 195);
   user-select: none;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 1px 1px 1px rgb(22, 20, 20);
+  border: none;
 }
 
 
 #greetDiv {
-  margin-top:20% ;
-  background-color: black;
+  background-color:white;
   margin-bottom: 10%;
 }
 
 #greetHeading {
-  color:rgb(198, 236, 234);
+  color:rgb(120, 200, 232);
   position: relative;
-  font-size: 35px;
+  font-size: 37px;
   text-align: center;
-  font-family:'galada';
+  font-family:'Zilla Slab Highlight';
 }
 
 
@@ -66,7 +66,12 @@ a {
 .majorDiv {
   margin:10px;
   padding: 10px;
-  margin-top: 60px;
+  margin-top: 80px;
+  border-top: 1px solid black;
+}
+
+#homeDiv,#greetDiv  {
+  border: none;
 }
 
 .minorDiv {
@@ -74,8 +79,8 @@ a {
 }
 
 .majorHeading {
-  color:rgb(162, 223, 125);
-  font-size: 50px;
+  color:black;
+  font-size:100px;
   font-family:'Homemade apple';
   text-align: left;
   margin-left: 60px;
@@ -91,15 +96,15 @@ a {
 
 .majorParagraph {
   font-family:monospace;
-  color:white;
-  font-size: 20px;
+  color:rgb(7, 7, 7);
+  font-size: 24px;
   margin:5px;
   padding:10px;
 }
 
 .minorParagraph {
   font-family:monospace;
-  color:rgb(207, 226, 143);
+  color:rgb(3, 3, 3);
   font-size: 30px;
   margin: 10px;
 
@@ -118,9 +123,12 @@ a {
 }
 
 .listItemLinks {
+  text-decoration: none;
+  list-style: none;
   font-size: 40px;
   font-family:monospace;
-  color: rgb(26, 218, 236);
+  color: rgb(5, 5, 5);
+  background-color: rgb(243, 240, 219);
   padding: 20px;
 }
 
@@ -131,7 +139,7 @@ a {
 }
 
 #projectsList {
-  color: white;
+  color: rgb(15, 15, 15);
   list-style: none;
   display: inline;
 }
@@ -139,9 +147,9 @@ a {
 
 
 .projectHeading {
-  color: palegreen;
+  color: rgb(3, 3, 3);
   font-family:monospace;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: lighter;
 }
 
@@ -173,7 +181,7 @@ a {
   padding: 20px;
   text-align: left;
   font-family:monospace;
-  color: rgb(208, 240, 236);
+  color: rgb(11, 11, 11);
 }
 
 
@@ -186,10 +194,11 @@ a {
 .skillsListItem {
   padding: 20px;
   margin: 10px;
-  color: rgb(255, 255, 255);
+  color: rgb(12, 12, 12);
   font-size: 20px;
-  background-color:black;
+  background-color:rgb(239, 227, 236);
   font-family: monospace;
+  border-radius: 10px;
 }
 
 .skill {
@@ -199,21 +208,29 @@ a {
 #contactHeading {
   text-align: center;
   margin: 0px;
+  list-style: none;
+  text-decoration: none;
 }
 
 .projectsDescription {
   font-family:monospace;
-  font-size: 18px;
+  font-size: 23px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .project {
   padding: 15px;
-  color: white;
+  color: rgb(9, 9, 9);
   margin-top: 50px;
   border-radius: 17px;
   border: 1px solid white;
+  background-color: rgb(234, 242, 234);
+}
+
+.project:hover {
+  background-color:#ffffff;
+  border: 1px solid red;
 }
 
 .projectListItem {
@@ -228,9 +245,12 @@ a {
 .footer {
   margin: 5vh 0;
   padding: 5vh;
-  border-top: 2px dotted rgb(162, 223, 125);
+  border-top: 5px solid rgb(8, 8, 8);
+  border-bottom: 5px solid rgb(8, 8, 8);
 }
 
-
+#contactListItem {
+  margin: 42px;
+}
 
 /*# sourceMappingURL=main.css.map*/

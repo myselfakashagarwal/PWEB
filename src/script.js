@@ -19,7 +19,6 @@ if (window.device.mobile()) {
     const greetHeading = document.getElementById("greetHeading");
     greetHeading.style.marginTop = "30%"
     canvas.style.borderRadius = "10px"
-    // canvas.style.marginTop = "-10%"
     canvas.style.zIndex = "1"
     const homeDiv = document.getElementById("homeDiv");
     const homeTitle = document.getElementById("homeTitle");
@@ -27,7 +26,7 @@ if (window.device.mobile()) {
     greetHeading.style.fontSize = "0.2rem"
     sizes.height = window.innerHeight * 0.8;
     greetDiv.style.marginTop = "20%"
-    homeTitle.style.marginTop = "150%"
+    homeTitle.style.marginTop = "110%"
     homeDiv.style.marginBottom = "0%"
 } else if (window.device.desktop()) {
     device = "desktop";
