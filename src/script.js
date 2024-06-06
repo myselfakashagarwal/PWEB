@@ -17,21 +17,18 @@ var device;
 if (window.device.mobile()) {
     device = "mobile"; 
     const greetHeading = document.getElementById("greetHeading");
-    greetHeading.style.marginTop = "30%"
+    greetHeading.style.marginTop = "50%"
     canvas.style.borderRadius = "10px"
     canvas.style.zIndex = "1"
     const homeDiv = document.getElementById("homeDiv");
     const homeTitle = document.getElementById("homeTitle");
     const greetDiv = document.getElementById("greetDiv");
-    greetHeading.style.fontSize = "0.2rem"
     sizes.height = window.innerHeight * 0.8;
     greetDiv.style.marginTop = "20%"
     homeTitle.style.marginTop = "110%"
     homeDiv.style.marginBottom = "0%"
 } else if (window.device.desktop()) {
     device = "desktop";
-    sizes.width = window.innerWidth - 80 ;
-    sizes.height = window.innerHeight -80 ; 
     const homeTitle = document.getElementById("homeTitle");
     homeTitle.style.marginTop = "20%"
     const greetHeading = document.getElementById("greetHeading");
@@ -132,6 +129,13 @@ if(device == "mobile") {
 
 }
 
+const minorParagraph = document.querySelectorAll(".minorParagraph");
+if(device != "desktop") {
+    minorParagraph.forEach(element => {
+        element.style.fontSize = "1rem";
+    });
+}
+
 const majorPragraph = document.querySelectorAll(".majorParagraph");
 if(device != "desktop") {
     majorPragraph.forEach(element => {
@@ -159,6 +163,8 @@ const listItemLinks = document.querySelectorAll(".listItemLinks");
 if(device != "desktop") {
     listItemLinks.forEach(element => {
         element.style.fontSize = "1.7rem";
+        element.style.margin = "20px";
+        element.style.padding = "10px";
     });
 }
 
@@ -171,7 +177,7 @@ if(device != "desktop") {
 
 const greetHeading = document.getElementById("greetHeading");
 if(device != "desktop") {
-    greetHeading.style.fontSize = "1.7rem";
+    greetHeading.style.fontSize = "1.3rem";
 }
 
 
@@ -186,6 +192,13 @@ const projectHeading = document.querySelectorAll(".projectHeading");
 if(device != "desktop") {
     projectHeading.forEach(element => {
         element.style.fontSize = "1.6rem";
+    });
+}
+
+const projectsDescription = document.querySelectorAll(".projectsDescription");
+if(device != "desktop") {
+    projectsDescription.forEach(element => {
+        element.style.fontSize = "15px";
     });
 }
 
